@@ -247,7 +247,9 @@ class Eliza
             if (preg_match('/' . $pattern . '/', trim($statement, '.!'), $matches, PREG_UNMATCHED_AS_NULL)) {
                 // This only supports one placeholder; it could be better.
                 $response = $responses[array_rand($responses)];
-                $response = str_replace('{0}', $this->reflect($matches[1]), $response);
+                if (isset($matches[1])) {
+                    $response = str_replace('{0}', $this->reflect($matches[1]), $response);
+                }
                 return $response;
             }
         }
