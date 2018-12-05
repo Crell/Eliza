@@ -1,5 +1,6 @@
 {
     "name": "crell/eliza",
+    "description": "The famous Eliza chatbot therapist.",
     "type": "library",
     "require-dev": {
         "phpunit/phpunit": "^7.4"
