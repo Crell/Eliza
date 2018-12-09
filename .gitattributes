@@ -1,0 +1,7 @@
+* text=auto
+
+/README.md export-ignore
+/main.php export-ignore
+/.editorconfig export-ignore
+/docker export-ignore
+/docker-compose.yml export-ignore
