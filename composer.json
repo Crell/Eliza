@@ -16,5 +16,13 @@
          "psr-4": {
             "Crell\\Eliza\\": "src/"
          }
-     }
+     },
+    "autoload-dev": {
+         "psr-4": {
+            "Crell\\Eliza\\Tests\\": "tests/"
+         }
+     },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    }
 }
